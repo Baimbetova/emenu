@@ -1,0 +1,64 @@
+body{
+	text-align: center;
+	/*background-image: url('../images/bg.jpg');*/
+	/*background-color: #EDC7B7;		*/
+	/*background-color: #AFD275;*/
+	background-size: 100%;
+
+	font-family: 'Avenir Next';
+	background-color: rgba(54,53,54);
+	/*font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;*/
+
+
+}
+
+.app{
+	position: fixed;
+	/* background-color: orange; */
+	background-image: url('../images/header1.png');
+	background-repeat: no-repeat;
+	background-size: 1450px;
+	height: 150px;
+	width: 1440px;
+	/*margin-top: 20px;*/
+	padding-bottom: 5px;
+	padding-top: 5px;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.logo {
+	margin-top: 10px;
+	margin-left: 210px;
+}
+
+.link{
+
+	/*padding-left: 100px;*/
+	/*padding-right: 100px;*/
+	display: flex;
+	flex-direction: initial;
+	align-items: center;
+	justify-content: flex-end;
+	width: 600px;
+	height: 70px;
+	/* margin: auto; */
+	/*margin-top: 60px;*/
+	/*background-color: #AFD275;*/
+
+	margin-left: 70px;
+
+}
+
+.to{
+	color: white;
+	font-size: 25px;
+	/*margin-bottom: 10px;*/
+	text-decoration: none;
+	/* background-color: blue; */
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 50px;
+}
