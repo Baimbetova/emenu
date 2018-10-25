@@ -23,14 +23,13 @@ class About extends Component{
 					</div>
 				</div>
 				<div className="fourth">
-					
 				</div>
 				<div className="fifth">
-					
 				</div>
 			</div>
 		);
 	}
 }
 
-export default About; 
+export default About;
+ 
