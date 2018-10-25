@@ -6,14 +6,11 @@ import Contact from './Contact';
 import Logo from '../images/logo.png';
 import '../css/styles.css';
 
-
 class App extends Component {
   render() {
     return (
-      <BrowserRouter >
-
-        <div >
-
+      <BrowserRouter>
+        <div>
           <div className="app">
             <div className="logo">
               <img src={Logo} width="80px" alt="" height="80px"/>
@@ -24,15 +21,12 @@ class App extends Component {
               <Link  className="to" to='/contact'><h4>Contact</h4></Link>
              </div>
           </div>
-
           <div >
              <Route exact path = '/' component={About}/>
              <Route exact path = '/menu' component={Menu}/>
              <Route exact path = '/contact' component={Contact}/>
           </div>
-
         </div>
-
       </BrowserRouter>
     );
   }
