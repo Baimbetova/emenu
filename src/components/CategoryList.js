@@ -24,26 +24,23 @@ class CategoryList extends Component {
 
 	render() {
 		const {categories} = this.props;
-		let items = categories.map((category) => {
-			return (<CategoryItem
-				key={category.id}
-				img={category.image}
-				categoryClick={()=> this.showFoods(category)}
-				/>)
-		});
-		let shownFoods;
-		if (this.state.show) {
-			shownFoods = <FoodList foods = {this.state.show.foods}
-							createOrder = {(id, foodName, price) => this.createOrder(id, foodName, price)}/>
-		}
-				
+
 		return(
 			<div className="content">
 				<div className="categoryList">
-					{items}
+					{categories.map((category) => (
+						<CategoryItem
+							key={category.id}
+							img={category.image}
+							categoryClick={()=> this.showFoods(category)}
+							/>));}
 				</div>
 				<div className="service">
-					{shownFoods}
+					{this.state.show &&
+						<FoodList
+							foods = {this.state.show.foods}
+							createOrder = {(id, foodName, price) => this.createOrder(id, foodName, price)}
+							/>}
 				</div>
 			</div>
 		);
